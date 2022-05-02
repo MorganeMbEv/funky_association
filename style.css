@@ -1,7 +1,32 @@
-@import url(https://fonts.googleapis.com/css2?family=Righteous&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
-/* Général */
+/* Body */
+body {
+  color: black;
+}
+header {
+  font-size: large;
+}
 
-h1 {
-  font-family: Righteous;
+.contenant {
+  position: relative;
+  text-align: center;
+}
+
+.text_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color:maroon;
+}
+
+.banner {
+  font-family: Yanone Kaffeesatz;
+}
+
+.justify {
+  text-align: justify;
 }
