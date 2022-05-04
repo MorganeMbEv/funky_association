@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
-/* Body */
 body {
   color: black;
 }
+
 header {
-  font-size: large;
+  font-size: x-large;
 }
 
 .contenant {
   position: relative;
   text-align: center;
+  color:maroon;
 }
 
 .text_center {
@@ -19,12 +20,15 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
-  color:maroon;
 }
 
-.banner {
+footer {
+  font-size: large;
+}
+
+header, footer {
   font-family: Yanone Kaffeesatz;
+  font-weight: bold;
 }
 
 .justify {
