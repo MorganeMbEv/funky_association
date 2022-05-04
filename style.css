@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Didact+Gothic&family=Permanent+Marker&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 body {
   color: black;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 header {
@@ -12,7 +11,7 @@ header {
 .contenant {
   position: relative;
   text-align: center;
-  color:maroon;
+  color: black;
 }
 
 .text_center {
@@ -27,8 +26,11 @@ footer {
 }
 
 header, footer {
-  font-family: Yanone Kaffeesatz;
   font-weight: bold;
+}
+
+main {
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .justify {
