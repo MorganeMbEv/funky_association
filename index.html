@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Funky association - Accueil</title>
   <meta name="description" content="La Funky association a enfin son site web où vous pourrez retrouver
@@ -12,10 +13,10 @@
 
 </head>
 <body>
-  <div class="container-fluid m-0">
-    <!--Header-->
+  <div class="container-fluid">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-warning bg-gradient">
+<!--Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning bg-gradient ps-3">
         <a href="index.html" class="navbar-brand">
           <img src="images/logo.png"
           class="rounded-circle img-fluid mx-2"
@@ -35,7 +36,7 @@
               <a class="nav-link" href="#">Evènements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Glossaire</a>
+              <a class="nav-link" href="glossaire.html">Glossaire</a>
             </li>
           </ul>
         </div>
@@ -58,20 +59,18 @@
           </button>
         </form>
       </nav>
+<!--/Navigation-->
+
 <!--Banner-->
-      <div class="contenant">
-        <img src="images/banner_discoball.jpg" class="img-fluid opacity-75" alt="boule disco">
-        <div class="text_center">
-          <h1 class="banner bg-light opacity-50 rounded">Bienvenue sur le site de la Funky 
-            Association</h1>
-        </div>
+      <div class="row">
+        <img src="images/banner.PNG" class="img-fluid" alt="boule disco">
       </div>
 <!--/Banner-->
 
     </header>
     <main class="d-flex justify-content-center">
-<!--Section-->
-      <section class="col-11 col-xl-9">
+<!--Presentation-->
+        <section class="col-11 col-xl-9">
           <div class="row">
             <div class="col-md-6">
               <h3 class="shadow p-3 m-3 bg-body rounded">C'est quoi la Funky association ?</h3>
@@ -84,7 +83,7 @@
                 </p>
                 <p class="small m-3 justify">
                   Vous avez pu remarquer que certains mots étaient en italique, vous pouvez retrouver leur
-                  définition dans le <a class="link-dark" href="#">glossaire</a>.
+                  définition dans le <a class="link-dark" href="glossaire.html">glossaire</a>.
                 </p>
             </div>
             <div class="col-md-6">
@@ -96,7 +95,9 @@
                 </p>
             </div>
         </div>
-<!--Card-->
+<!--/Presentation-->
+
+<!--Next event-->
         <article>
           <div class="row">
             <div class="col">
@@ -151,15 +152,15 @@
                     </div>
                   </div>
                   <div class="col">
-                    <img src="images/afro.jpg" class="img-fluid rounded-start float-end" alt="events">
+                    <img src="images/afro.jpg" class="img-fluid rounded-start float-end d-none d-sm-block" alt="events">
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </article>
-<!--/Card-->
-      </section>
+<!--/Next event-->
+</section>
     </main>
 
 <!--Footer-->
@@ -169,7 +170,7 @@
         <div class="col">
           <p> <b>Funky Association</b> <br> 123 route du coquelicot <br> 44100 Nantes <br> Tel: 
             <a href="tel:0678912345" class="link-dark">0678912345</a> <br> 
-            <a href="mailto:contact@funkyassoc.org" class="link-dark">contact@funkyassoc.org</a>
+            Mail: <a href="mailto:contact@funkyassoc.org" class="link-dark">contact@funkyassoc.org</a>
           </p>
         </div>
         <div class="col">
