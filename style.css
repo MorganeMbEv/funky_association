@@ -4,6 +4,10 @@ body {
   font-family: 'Allerta Stencil', sans-serif;
 }
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 header {
   font-size: x-large;
 }
