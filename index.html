@@ -2,45 +2,285 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Funky association - Accueil</title>
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <meta name="description" content="La Funky association a enfin son site web où vous pourrez retrouver
+   leurs évènements ainsi que leur coups de coeurs musicaux et plus encore ...">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
-  <div class="container-fluid">
-    <header>
-      <div class="row justify-content-between align-items-center bg-warning bg-gradient">
-        <div class="col-1"></div>
-        <div class="col-6">
-          <h1 class="py-5 px-2">
-            <svg xmlns="http://www.w3.org/2000/svg" 
-            width="45" 
-            height="45" 
-            fill="currentColor" 
-            class="bi bi-boombox" 
-            viewBox="0 0 16 16">
-            <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm7.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm-7-1a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3Zm5.5 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
-            <path d="M11.5 13a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm0-1a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3ZM5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
-            <path d="M7 10.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-1 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/>
-            <path d="M14 0a.5.5 0 0 1 .5.5V2h.5a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12.5V.5A.5.5 0 0 1 14 0ZM1 3v3h14V3H1Zm14 4H1v7h14V7Z"/>
-            </svg>
-            Funky association
-          </h1>
+  <header>
+<!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning bg-gradient">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" >
+          <img src="images/logo.png"
+          class="rounded-circle img-fluid mx-2"
+          width="75"
+          height="75"
+          alt="logo funky association">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">Evènements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="glossaire.html">Glossaire</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-5">
-          
+        <button type="button" class="btn btn-outline-dark mx-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </button>
+        <button type="button" class="btn btn-outline-dark mx-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+        </button>
+        <form class="form-inline">
+          <button type="button" class="btn btn-outline-dark btn-sm m-2" data-toggle="modal" data-target="#contactMe">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+            </svg>
+            Contactez-nous
+          </button>
+        </form>
+      </div>
+    </nav>
+<!--/Navigation-->
+<!--Banner-->
+      <div class="contenant">
+          <img src="images/banner_discoball.png" class="img-fluid opacity-75 d-block w-100" alt="boule disco">
+          <h1 class="text_center bg-light bg-opacity-50 rounded">Bienvenue sur le site de la Funky Association</h1>
+      </div>
+<!--/Banner-->
+  </header>
+
+  <main>
+    <div class="container-fluid">
+<!--Presentation-->
+      <section>
+        <div class="row justify-content-around">
+          <div class="col-md-5">
+            <h3 class="shadow p-3 m-5 bg-body rounded">C'est quoi la Funky association ?</h3>
+              <p class="m-5 justify">
+              Notre but est de partager notre passion pour la musique <em>funk</em> et <em>disco</em> 
+              des années 60 à 80. Nous organisons des évènements dans toute la France où nous nous 
+              retrouvons pour danser et partager les meilleurs artistes et morceaux cette époque.
+              Notre plus grand rêve est d'organiser un énorme <em>Roller Disco</em>. <br>
+              Pour retrouver nos prochains évènements, <a href="event.html" class="link-dark">cliquez içi</a>)<br>
+              <span class="small justify"><i>Vous avez pu remarquer que certains mots étaient en italique, 
+              vous pouvez retrouver leur définition dans le <a class="link-dark" href="glossaire.html">glossaire</a>.</i> 
+              </span>
+              </p>
+          </div>
+          <div class="col-md-5">
+            <h3 class="shadow p-3 m-5 bg-body rounded">Qui sommes-nous ?</h3>
+              <p class="m-5 justify">La Funky Association a été créée en 2015 , à Nantes, par un 
+              groupe de passionnés de musique joyeuse et de danses endiablées. Nous nous retrouvions 
+              tous les week-ends pour écouter et danser sur des morceaux funk et disco. Nous avons
+              donc décidé de créer cette association pour partager notre amour pour cette musique.<br> 
+              Elle est composée de DJ résidents, d'un community manager et de beaucoup de bras pour 
+              organiser nos évènements.
+              </p>
+          </div>
+<!--/Presentation-->
+
+<!--Next event-->
+          <article>
+            <div class="row justify-content-center">
+              <div class="col-md-11">
+                <h4 class="shadow p-3 m-3 bg-body rounded">Prochain évènement</h4>
+                  <div class="card m-5">
+                    <div class="row g-0">
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title text-center mb-2"><b>GET INTO THE MUSIC</b></h5>
+                          <p class="card-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                              <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            L'Agronaute à Nantes (<a href="event.html" class="link-dark">Plus d'infos par içi</a> )
+                          </p>
+                          <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                              <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                            Vendredi 27 Mai 2022- 20h30
+                          </p>
+                          <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-euro" viewBox="0 0 16 16">
+                              <path d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936c0-.11 0-.219.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.617 6.617 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z"/>
+                            </svg>
+                            Paiements par espèces et CB acceptés
+                          </p>
+                          <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                              <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+                            </svg>
+                            Acheter vos places dès maintenant! 
+                          </p>
+                          <button type="button" class="btn btn-warning fw-light mb-2">
+                            J'achète ma place
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                              <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13Z"/>
+                            </svg>
+                          </button>
+                          <div class="progress">
+                            <div 
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-dark" 
+                            role="progressbar" 
+                            style="width: 60%" 
+                            aria-valuenow="350" 
+                            aria-valuemin="0" 
+                            aria-valuemax="500"> 100 PLACES ENCORE DISPOS
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <img src="images/afro.jpg" class="img-fluid rounded-start float-end d-none d-sm-block" alt="afro events">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+        </div>
+<!--/Next event-->
+      </section>
+    </div>
+  </main>
+  
+<!--Footer-->
+  <footer>
+    <div class="bg-warning text-center text-dark">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col">
+            <p> <b>Funky Association</b> <br> 123 route du coquelicot <br> 44100 Nantes <br> Tel: 
+              <a href="tel:0678912345" class="link-dark">0678912345</a> <br> 
+              Mail: <a href="mailto:contact@funkyassoc.org" class="link-dark">contact@funkyassoc.org</a>
+            </p>
+          </div>
+          <div class="col">
+            <p>Suivez-nous sur les réseaux</p>
+            <button type="button" class="btn btn-outline-dark mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-outline-dark mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <p class="small">Copyright 2022</p>
+      </div>
+    </div>
+  </footer>
+<!--/Footer-->
+
+<!--Modal-->
+  <div
+  class="modal" 
+  tabindex="-1" 
+  role="dialog" 
+  id="contactMe" 
+  aria-labelledby="message" 
+  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header m-2 bg-warning">
+          <h5 class="modal-title">Nous contacter</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Nom et prénom</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea 
+              class="form-control" 
+              id="message" 
+              rows="4" 
+              name="message" 
+              placeholder="Proposez nous vos évènements ou un simple message d'encouragement :)"></textarea>
+            </div>
+            <fieldset>
+              <legend class="col-form-label">Je veux recevoir la newsletter de la Funky Association :</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input 
+                    type="radio" 
+                    class="form-check-input" 
+                    name="newsletters" 
+                    id="trueNews" 
+                    value="option1" 
+                    checked>
+                    <label class="form-check-label form-control-sm" for="trueNews">
+                      Oui avec plaisir, envoyez moi vos news!
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input 
+                    type="radio" 
+                    class="form-check-input" 
+                    name="newsletters" 
+                    id="falseNews" 
+                    value="option2">
+                    <label class="form-check-label form-control-sm" for="falseNews">
+                      Non merci, ça ne m'intéresse pas!
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </form>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success btn-sm" aria-label="Send">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89.471-1.178-1.178.471L5.93 9.363l.338.215a.5.5 0 0 1 .154.154l.215.338 7.494-7.494Z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square-fill text-danger" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-      <nav class="navbar">
-
-      </nav>
-    </header>
-
+    </div>
   </div>
+</div>
+<!--Modal-->
 
-<script src="jquery.min.js"></script>
-<script src="bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

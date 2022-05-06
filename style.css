@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
-
-/* Body */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Didact+Gothic&family=Permanent+Marker&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 body {
   color: black;
+  font-family: 'Allerta Stencil', sans-serif;
 }
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 header {
-  font-size: large;
+  font-size: x-large;
 }
 
 .contenant {
   position: relative;
   text-align: center;
+  color: black;
 }
 
 .text_center {
@@ -19,12 +23,18 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
-  color:maroon;
 }
 
-.banner {
-  font-family: Yanone Kaffeesatz;
+footer {
+  font-size: large;
+}
+
+header, footer {
+  font-weight: bold;
+}
+
+main {
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .justify {

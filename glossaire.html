@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Funky association - Accueil</title>
+  <title>Funky association - Glossaire</title>
   <meta name="description" content="La Funky association a enfin son site web où vous pourrez retrouver
    leurs évènements ainsi que leur coups de coeurs musicaux et plus encore ...">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
-  <div class="container-fluid">
-    <!--Header-->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-warning bg-gradient">
-        <a href="index.html" class="navbar-brand">
+  <header>
+<!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning bg-gradient">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" >
           <img src="images/logo.png"
           class="rounded-circle img-fluid mx-2"
           width="75"
@@ -32,7 +33,7 @@
               <a class="nav-link" href="index.html">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Evènements</a>
+              <a class="nav-link" href="event.html">Evènements</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Glossaire</a>
@@ -57,123 +58,135 @@
             Contactez-nous
           </button>
         </form>
-      </nav>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-warning bg-opacity-50 ">
-          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Glossaire</li>
-        </ol>
-      </nav>
-<!--Banner-->
-      <div class="contenant">
-        <img src="images/banner_discoball.jpg" class="img-fluid opacity-75" alt="boule disco">
-        <div class="text_center">
-          <h1 class="banner bg-light opacity-50 rounded"></h1>
-        </div>
       </div>
+    </nav>
+<!--/Navigation-->
+<!--Banner-->
+    <div class="contenant justify-content-lg-end">
+        <img src="images/banner_discoball.png" class="img-fluid opacity-75 d-block w-100" alt="boule disco">
+    </div>
 <!--/Banner-->
+<!--Breadcrumb-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-warning bg-opacity-50 p-1">
+        <li class="breadcrumb-item"><a href="index.html" class="link-dark">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Glossaire</li>
+      </ol>
+    </nav>
+<!--/Breadcrumb-->
+  </header>
 
-    </header>
-    <main class="d-flex justify-content-center">
-      <!--Accordion-->
+  <main>
+    <div class="container-fluid">
+<!--Accordion for the glossary-->
       <article>
-        <div class="row align-items-center">
-          <h4 class="shadow p-3 m-3 bg-body rounded">Glossaire</h4>
-          <div class="col-6">
-          <div class="accordion m-2" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header " id="headingOne">
-                <button class="accordion-button bg-warning link-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                C'est quoi le funk ?
-                </button>
-              </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                  Le funk est une forme de musique afro-américaine apparue aux États-Unis à la fin des 
-                  années 1950, dans la lignée du mouvement Hard bop, et qui s'est développée au cours des 
-                  années 1960 et années 1970. Selon certaines interprétations, le terme funk proviendrait 
-                  de l'argot anglo-américain funky, qui signifie littéralement « puant », « qui sent la 
-                  sueur », reproche traditionnellement adressé aux noirs par les WASP, et repris ensuite 
-                  à leur compte par les artistes noirs tel que Horace Silver dans son morceau "Opus de 
-                  Funk" (1953).
-                  </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed bg-warning link-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Et le disco ?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Le disco est apparu à la fin des années 60 dans les clubs de New York et de Philadelphie
-                 fréquentés par les communautés afro-américaines, latines et homosexuelles. 
-                 Les ingrédients sont en tout cas bien identifiés : un mélange de funk, de soul et de 
-                 pop, des synthétiseurs souvent associés à des cuivres et des cordes et surtout un rythme 
-                 binaire très marqué. Les disques sélectionnés et remixés par les DJ n'ont qu'une fonction :
-                faire danser. Faire danser toute une population de fêtard peu habitué à la musique noire 
-                jusque-là très communautaire. Dans les années 70, Donna Summer fait éclater le genre et
-                 est rapidement couronnée "reine du disco". 
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed bg-warning link-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Roller disco ? Jamais entendu parler
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  La danse est dans l’ADN du patinage à roulettes. De Gene Kelly à Roll Bounce, le roller
-                   a ouvert de nouvelles possibilités artistiques. Avec quelques bases de patinages, il 
-                   est facile d’apprendre rapidement une chorégraphie. Dans les années 70 et 80, les soirées
-                    Roller Disco ont été un véritable phénomène de société avec un grand nombre de skating 
-                    rinks aux Etats-Unis, au Royaume-Uni et même en France, avec des spots mythiques tels 
-                    que la fameuse Main Jaune (Paris) qui a fermé ses portes durant l’été 2013. 
-                </div>
-              </div>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-11">
+            <h3 class="shadow p-3 mt-5 bg-body rounded">Glossaire</h3>
           </div>
         </div>
-        <!--<div class="col-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/kXUtOoNUOzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-        </div>-->
-      </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="accordion m-5" id="accordionGlossary">
+                <div class="accordion-item">
+                  <h2 class="accordion-header " id="headingOne">
+                    <button class="accordion-button bg-warning link-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    C'est quoi le funk ?
+                    </button>
+                  </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionGlossary">
+                      <div class="accordion-body">
+                      Le funk est une forme de musique afro-américaine apparue aux États-Unis à la fin des 
+                      années 1950, dans la lignée du mouvement Hard bop, et qui s'est développée au cours des 
+                      années 1960 et années 1970. Selon certaines interprétations, le terme funk proviendrait 
+                      de l'argot anglo-américain funky, qui signifie littéralement « puant », « qui sent la 
+                      sueur », reproche traditionnellement adressé aux noirs par les WASP, et repris ensuite 
+                      à leur compte par les artistes noirs tel que Horace Silver dans son morceau "Opus de 
+                      Funk" (1953).
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-warning link-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Et le disco ?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionGlossary">
+                    <div class="accordion-body">
+                      Le disco est apparu à la fin des années 60 dans les clubs de New York et de Philadelphie
+                     fréquentés par les communautés afro-américaines, latines et homosexuelles. 
+                     Les ingrédients sont en tout cas bien identifiés : un mélange de funk, de soul et de 
+                     pop, des synthétiseurs souvent associés à des cuivres et des cordes et surtout un rythme 
+                     binaire très marqué. Les disques sélectionnés et remixés par les DJ n'ont qu'une fonction :
+                    faire danser. Faire danser toute une population de fêtard peu habitué à la musique noire 
+                    jusque-là très communautaire. Dans les années 70, Donna Summer fait éclater le genre et
+                     est rapidement couronnée "reine du disco". 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-warning link-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Roller disco ? Jamais entendu parler
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionGlossary">
+                    <div class="accordion-body">
+                      La danse est dans l’ADN du patinage à roulettes. De Gene Kelly à Roll Bounce, le roller
+                       a ouvert de nouvelles possibilités artistiques. Avec quelques bases de patinages, il 
+                       est facile d’apprendre rapidement une chorégraphie. Dans les années 70 et 80, les soirées
+                        Roller Disco ont été un véritable phénomène de société avec un grand nombre de skating 
+                        rinks aux Etats-Unis, au Royaume-Uni et même en France, avec des spots mythiques tels 
+                        que la fameuse Main Jaune (Paris) qui a fermé ses portes durant l’été 2013. <br>
+                        Pour vous faire idée, cliquer sur le 
+                        <a href="https://www.youtube.com/watch?v=vprZhrFNL_U" class="link-dark" target="_blank">lien</a>. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+<!--/Accordion-->
+          <div class="col-md-3 p-3 d-flex align-items-center">
+            <img src="images/funky music.jpg" alt="affiche funk" class="img-fluid img-thumbnail">
+          </div>
+        </div>
       </article>
-      <!--/Accordion-->
-    </main>
+    </div>
+  </main>
 
 <!--Footer-->
   <footer>
     <div class="bg-warning text-center text-dark">
-      <div class="row align-items-center">
-        <div class="col">
-          <p> <b>Funky Association</b> <br> 123 route du coquelicot <br> 44100 Nantes <br> 
-            Tel: <a href="tel:0678912345" class="link-dark">0678912345</a> <br> 
-            Email: <a href="mailto:contact@funkyassoc.org" class="link-dark">contact@funkyassoc.org</a>
-          </p>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col">
+            <p> <b>Funky Association</b> <br> 123 route du coquelicot <br> 44100 Nantes <br> 
+              Tel: <a href="tel:0678912345" class="link-dark">0678912345</a> <br> 
+              Email: <a href="mailto:contact@funkyassoc.org" class="link-dark">contact@funkyassoc.org</a>
+            </p>
+          </div>
+          <div class="col">
+            <p>Suivez-nous sur les réseaux</p>
+            <button type="button" class="btn btn-outline-dark mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-outline-dark mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="col">
-          <p>Suivez-nous sur les réseaux</p>
-          <button type="button" class="btn btn-outline-dark mx-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-            </svg>
-          </button>
-          <button type="button" class="btn btn-outline-dark mx-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-            </svg>
-          </button>
-        </div>
+        <p class="small">Copyright 2022</p>
       </div>
-      <p class="small">Copyright 2022</p>
     </div>
   </footer>
 <!--/Footer-->
 
+<!--Modal-->
   <div
   class="modal" 
   tabindex="-1" 
@@ -185,9 +198,7 @@
       <div class="modal-content">
         <div class="modal-header m-2 bg-warning">
           <h5 class="modal-title">Nous contacter</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form>
@@ -238,9 +249,14 @@
             </fieldset>
           </form>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-success btn-sm">
+            <button type="submit" class="btn btn-success btn-sm" aria-label="Send">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89.471-1.178-1.178.471L5.93 9.363l.338.215a.5.5 0 0 1 .154.154l.215.338 7.494-7.494Z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square-fill text-danger" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
               </svg>
             </button>
           </div>
@@ -248,7 +264,8 @@
       </div>
     </div>
   </div>
-</div>
+<!--/Modal-->
+
 </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
