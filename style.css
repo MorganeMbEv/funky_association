@@ -8,29 +8,21 @@ body {
   box-sizing: border-box;
 }
 
+header, footer {
+  font-weight: bold;
+}
+
 header {
   font-size: x-large;
 }
 
-.contenant {
-  position: relative;
+.banner {
   text-align: center;
   color: black;
-}
-
-.text_center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-footer {
-  font-size: large;
-}
-
-header, footer {
-  font-weight: bold;
+  background-image: url(images/banner.png);
+  background-size: cover;
+  background-position: center center;
+  padding: min(90px) max(110px); 
 }
 
 main {
@@ -39,4 +31,8 @@ main {
 
 .justify {
   text-align: justify;
+}
+
+footer {
+  font-size: large;
 }
