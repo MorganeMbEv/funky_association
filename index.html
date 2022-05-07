@@ -106,7 +106,7 @@
                   <div class="card m-5">
                     <div class="row g-0">
                       <div class="col">
-                        <div class="card-body">
+                        <div class="card-body justify">
                           <h5 class="card-title text-center mb-2"><b>GET INTO THE MUSIC</b></h5>
                           <p class="card-text">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
@@ -152,8 +152,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col">
-                        <img src="images/afro.jpg" class="img-fluid rounded-start float-end d-none d-sm-block" alt="afro events">
+                      <div class="col d-none d-lg-block">
+                        <img src="images/afro.jpg" class="img-fluid rounded-start float-end" alt="afro events">
                       </div>
                     </div>
                   </div>
@@ -168,7 +168,7 @@
   
 <!--Footer-->
   <footer>
-    <div class="bg-warning text-center text-dark">
+    <div class="bg-warning text-center text-dark p-3">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col">
@@ -191,7 +191,22 @@
             </button>
           </div>
         </div>
-        <div class="small p-3">Copyright 2022</div>
+        <div class="row align-items-center">
+          <div class="col">
+            <form class="form-inline">
+              <button type="button" class="btn btn-outline-dark btn-sm m-1" data-toggle="modal" data-target="#contactMe">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                </svg>
+                Devenez bénévole
+              </button>
+            </form>
+          </div>
+          <div class="col">
+            <a href="#" class="small link-dark">Mentions légales</a>
+          </div>
+        </div>
+        <div class="small">Copyright 2022</div>
       </div>
     </div>
   </footer>
@@ -228,7 +243,7 @@
               id="message" 
               rows="4" 
               name="message" 
-              placeholder="Proposez nous vos évènements ou un simple message d'encouragement :)"></textarea>
+              placeholder="Proposez nous vos évènements, devenez bénévole ou envoyez nous un simple message d'encouragement :)"></textarea>
             </div>
             <fieldset>
               <legend class="col-form-label">Je veux recevoir la newsletter de la Funky Association :</legend>

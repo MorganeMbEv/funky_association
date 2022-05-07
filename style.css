@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Didact+Gothic&family=Permanent+Marker&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+
 body {
   color: black;
   font-family: 'Allerta Stencil', sans-serif;
@@ -22,7 +23,7 @@ header {
   background-image: url(images/banner.PNG);
   background-size: cover;
   background-position: center center;
-  padding: min(90px) max(110px); 
+  padding: 110px; 
 }
 
 main {
@@ -34,5 +35,5 @@ main {
 }
 
 footer {
-  font-size: large;
+  font-size: medium;
 }
